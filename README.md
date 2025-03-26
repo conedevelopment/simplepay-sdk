@@ -1,2 +1,3 @@
-# simplepay-sdk
-PHP SDK for OTP SimplePay API.
+# OTP SimplePay SDK
+
+This is a PHP SDK for the OTP SimplePay v2 API.
