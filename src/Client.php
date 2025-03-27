@@ -22,11 +22,18 @@ class Client
     /**
      * Create a new client instance.
      */
-    public function __construct(string $merchantId, string $secretKey, bool $sandbox = false)
+    public function __construct(string $merchantId, string $secretKey)
     {
         $this->merchantId = $merchantId;
         $this->secretKey = $secretKey;
-        $this->sandbox = $sandbox;
+    }
+
+    /**
+     * Switch to sandbox mode.
+     */
+    public function sandboxMode(): void
+    {
+        $this->sandbox = true;
     }
 
     /**
